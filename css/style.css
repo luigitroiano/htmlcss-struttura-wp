@@ -26,27 +26,25 @@ body{
   position: relative;
 }
 
-.heading h1, .heading p{
-  color: white;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-}
-
-.heading h1{
+.custom-logo{
+  width: auto;
+  height: 170px;
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 4px solid white;
-  font-size: 50px;
-  font-weight: 300;
-  padding-right: 15px;
-  padding-left: 15px;
+  transform: translate(-50%, -50%);
 }
 
 .heading p{
+  width: 390px;
+  color: white;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 nav{
@@ -146,6 +144,20 @@ main:after{
   position: absolute;
   top: 4px;
   left: 38px;
+}
+
+.paragraphs_sidebar_left{
+  position: absolute;
+  left: 6px;
+  top: 55px;
+  right: 6px;
+}
+
+.p_organic_theme{
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: green;
 }
 
 .subtitles{
