@@ -12,6 +12,8 @@ body{
 .container{
   width: 1000px;
   height: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .heading{
@@ -24,7 +26,7 @@ body{
   position: relative;
 }
 
-.heading h1,p{
+.heading h1, .heading p{
   color: white;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
@@ -65,29 +67,25 @@ nav .menu_nav{
 
 main{
   width: 75%;
+  height: 1055px;
   margin: auto;
-  background-color: green;
-
 }
 
 .sidebar_left{
   width: 25%;
   height: 400px;
-  background-color: red;
   float: left;
 }
 
 .content_page{
   width: 50%;
   height: 300px;
-  background-color: yellow;
   float: left;
 }
 
 .sidebar_right{
   width: 25%;
   height: 800px;
-  background-color: blue;
   float: right;
 }
 
@@ -95,4 +93,74 @@ main:after{
   content:"";
   display: table;
   clear: both;
+}
+
+.content{
+  height: 100%;
+  background-color: white;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.left{
+  margin-right: 15px;
+}
+
+.center{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.right{
+  height: 40%;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.sidebar_left i{
+  float: left;
+  color: orange;
+  font-size: 25px;
+}
+
+h3{
+  float: left;
+}
+
+footer{
+  background-color: white;
+  width: 75%;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  color: lightgrey;
+  border-radius: 5px;
+}
+
+.footer{
+  border-bottom: 1px solid lightgrey;
+  font-style: italic;
+  padding: 1.5px;
+}
+
+.footer_icon{
+  font-size: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.fb_icon{
+    display: inline-block;
+    width: 32%;
+}
+
+.ig_icon{
+    display: inline-block;
+    width: 32%;
+}
+
+.git_icon{
+    display: inline-block;
+    width: 32%;
 }
