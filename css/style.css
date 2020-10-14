@@ -9,6 +9,12 @@ body{
   background-image: url("https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-pattern.png");
 }
 
+/* utility class */
+.fl{
+  float: left;
+}
+/* /utility class */
+
 .container{
   width: 1000px;
   height: 100%;
@@ -16,6 +22,7 @@ body{
   margin-bottom: 15px;
 }
 
+/* inizio header */
 .heading{
   width: 75%;
   height: 300px;
@@ -47,6 +54,7 @@ body{
   transform: translate(-50%, -50%);
 }
 
+/* navbar */
 nav{
   width: 75%;
   height: 34px;
@@ -57,15 +65,19 @@ nav{
 
 nav .menu_nav{
   text-transform: uppercase;
-  display: inline-block;
   list-style: none;
   font-size: 12px;
   padding: 10px;
 }
 
-.menu_nav li > a{
+nav li{
+  display: inline-block;
+}
+
+.menu_nav li a{
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 
 .menu_nav:hover a{
@@ -73,34 +85,33 @@ nav .menu_nav{
   color: black;
 }
 
-.menu_nav:hover{
+a:hover{
   background-color: lightgrey;
 }
+/* /navbar */
+/* / header */
 
 main{
   width: 75%;
-  height: 1055px;
   margin: auto;
 }
 
 .sidebar_left{
   width: 25%;
   height: 400px;
-  float: left;
 }
 
 .content_page{
   width: 50%;
   height: 300px;
-  float: left;
 }
 
 .sidebar_right{
   width: 25%;
   height: 800px;
-  float: right;
 }
 
+/* inizio main */
 main:after{
   content:"";
   display: table;
@@ -116,70 +127,20 @@ main:after{
 
 .left{
   margin-right: 15px;
-  position: relative;
 }
 
 .center{
   margin-right: 15px;
   margin-left: 15px;
-  position: relative;
 }
 
 .right{
-  height: 40%;
-  margin-bottom: 30px;
+  height: 70%;
   margin-left: 15px;
-  position: relative;
 }
+/* / main */
 
-.sidebar_left i{
-  position: absolute;
-  top: 4px;
-  left: 6px;
-  color: orange;
-  font-size: 25px;
-}
-
-#subtitle_sidebar_left{
-  position: absolute;
-  top: 4px;
-  left: 38px;
-}
-
-.paragraphs_sidebar_left{
-  position: absolute;
-  left: 6px;
-  top: 55px;
-  right: 6px;
-}
-
-.p_organic_theme{
-  padding-bottom: 10px;
-  text-transform: capitalize;
-  font-size: 15px;
-  color: green;
-}
-
-.subtitles{
-  color: #636161;
-  text-transform: uppercase;
-  text-shadow: 0.5px 0px grey;
-  position: absolute;
-  left: 5%;
-  top: 7%;
-}
-
-.paragraphs{
-  position: absolute;
-  top: 25%;
-  right: 5%;
-  left: 5%;
-}
-
-.sidebar_right h3{
-  text-transform: capitalize;
-}
-
+/* inizio footer */
 footer{
   background-color: white;
   width: 75%;
@@ -195,36 +156,4 @@ footer{
   font-style: italic;
   padding: 1.5px;
 }
-
-.footer_icon{
-  font-size: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.fb_icon{
-    display: inline-block;
-    width: 32%;
-}
-
-.ig_icon{
-    display: inline-block;
-    width: 32%;
-}
-
-.git_icon{
-    display: inline-block;
-    width: 32%;
-}
-
-.fb_icon:hover #facebook{
-  color: blue;
-}
-
-.ig_icon:hover #instagram{
-  color: purple;
-}
-
-.git_icon:hover #git{
-  color: black;
-}
+/* / footer */
